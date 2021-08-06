@@ -1,3 +1,7 @@
+-- Database:
+
+-- Create Table structure 'suspects' 
+
 CREATE TABLE suspects(
 	suspect_id SERIAL PRIMARY KEY,
 	first_name VARCHAR(100) NOT NULL,
@@ -11,11 +15,7 @@ CREATE TABLE suspects(
 	glasses VARCHAR(10) NOT NULL
 )
 
-
-
-SELECT * FROM suspects
-
-
+-- Add in data for table 'suspects'
 
 INSERT INTO suspects(
 	first_name,last_name,sex,hair,eyes,
@@ -338,3 +338,7 @@ VALUES
 ('Will', 'Wynn', 'Male', 'Black', 'Brown', 'Short', 'Medium', 'Arches', 'Yes'),
 ('Willie', 'Waite', 'Male', 'Red', 'Brown', 'Short', 'Medium', 'Arches', 'Yes'),
 ('Winsom', 'Cash', 'Male', 'Black', 'Brown', 'Average', 'Medium', 'Loops', 'No');
+
+-- View the table 'suspects' as it now holds all of the data
+
+SELECT * FROM suspects;
